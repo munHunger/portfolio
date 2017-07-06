@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.swagger:swagger-jersey-jaxrs:1.5.13">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.swagger/swagger-jersey-jaxrs/1.5.13/3b46cae81b6f32f6b48a7742db4558d7bb9acac4/swagger-jersey-jaxrs-1.5.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.swagger/swagger-jersey-jaxrs/1.5.13/4af4ba2ddd9ae3f188f5824cb12ad799e241768d/swagger-jersey-jaxrs-1.5.13-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
