@@ -24,6 +24,14 @@
   height: 925px;
 }
 
+.scroll-down
+{
+  position: absolute;
+  font-size: 36px;
+  right: 150px;
+  bottom: 20px;
+}
+
 .content
 {
   font-family: Arial, Helvetica, sans-serif;
@@ -42,26 +50,91 @@
   margin-bottom: 20px;
 }
 
+.content h4
+{
+  font-weight: 600;
+}
+
+.timespan
+{
+  display: inline-block;
+  font-style: italic;
+  width: 100px;
+}
+
+.title
+{
+  font-weight: 600;
+}
+
+.employer
+{
+  font-size: 11px;
+}
+
+.workareas
+{
+  margin-left: 20px;
+}
+
 .contact
 {
   padding-left: 500px;
   padding-right: 500px;
 }
 
+
 .header-text
 { 
   position: absolute;
   left: 150px;
   bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgba(50, 50, 50, 0.5)
 }
 
 .header h3
 {
-  margin-top: -20px;
+  margin-top: -10px;
   font-weight: 700;
 }
 
 .header h1
 {
   font-weight: 900;
+}
+
+.quote::before
+{
+  content: "\"";
+}
+
+.quote
+{
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  display: inline-block;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.author-right
+{
+  font-weight: 500;
+  font-size: 14px;
+  font-style: italic;
+  text-align: right;
+  margin-right: -30px;
+}
+.author-left
+{
+  font-weight: 500;
+  font-size: 14px;
+  font-style: italic;
+  text-align: left;
+  margin-left: -30px;
 }
