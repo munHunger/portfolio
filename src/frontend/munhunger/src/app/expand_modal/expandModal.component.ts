@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, Input, ContentChild } from '@angular/core';
 
 @Component({
   selector: 'expand-modal',
@@ -7,27 +7,39 @@ import { Component, ViewChild } from '@angular/core';
 })
 export class ExpandModalComponent
 {
+    @Input()
+    offset:boolean = true;
+
+    @ContentChild("content")
+    content;
+
+    @Input()
+    imageURL: string;
+
     @ViewChild("container")
     container;
 
     openProgress: number = 0;
-    currentWidth: number = 300;
-    currentHeight: number = 200;
+    currentWidth: number = 0;
+    currentHeight: number = 0;
+    @Input()
     closedWidth: number = 300;
+    @Input()
     closedHeight: number = 200;
 
     openWidth: number = 900;
-    openHeight: number = 600;
+    openHeight: number = 900;
 
     startX: number;
     startY: number;
-    targetX: number = 40;
-    targetY: number = 200;
+    targetX: number;
+    targetY: number = 20;
 
     toggle()
     {
         this.startX = this.getX() + this.closedWidth - 10;
         this.startY = this.getY();
+        this.targetX = window.innerWidth/2 - this.openWidth/2;
         if(this.openProgress == 1)
             this.open(-0.05);
         else if(this.openProgress == 0)
@@ -71,6 +83,8 @@ export class ExpandModalComponent
 
     getX()
     {
+        if(this.container.nativeElement.children.length > 0)
+            return this.getRelativeX(this.container.nativeElement.parentElement) + this.container.nativeElement.children[0].offsetLeft;
         return this.getRelativeX(this.container.nativeElement.parentElement);
     }
 

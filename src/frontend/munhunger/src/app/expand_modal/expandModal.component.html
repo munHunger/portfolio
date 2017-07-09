@@ -6,20 +6,11 @@
     (click)="toggle()">
     <div *ngIf="openProgress == 0"
          style="position: absolute;"
-        [style.top]="(0-(openHeight-currentHeight)/3) + 'px'"
-        [style.left]="(0-(openWidth-currentWidth)/3) + 'px'">
-        <img src="/assets/DSC00738.jpg" [ngClass]="{'w3-grayscale':openProgress > 0}" style="width: 900px"/>
-        <p>
-            screenX:{{getX()}}<br />
-            screenY:{{getY()}}<br />
-            Lorem ipsum dolor sit amet consequtor
-        </p>
+        [style.top]="(offset ? (0-(openHeight-closedHeight)/3) : 0) + 'px'"
+        [style.left]="(offset ? (0-(openWidth-closedWidth)/3) : 0) + 'px'">
+        <img src="{{imageURL}}" [ngClass]="{'w3-grayscale':openProgress > 0}"/>
     </div> 
 </div>
-
-
-            screenX:{{getX()}}<br />
-            screenY:{{getY()}}<br />
 
 <div *ngIf="openProgress > 0"
      class="container open" 
@@ -29,14 +20,10 @@
     [style.top]="getTop() + 'px'"
     (click)="toggle()">
     <div style="position: absolute;"
-        [style.top]="(0-(openHeight-currentHeight)/3) + 'px'"
-        [style.left]="(0-(openWidth-currentWidth)/3) + 'px'">
-        <img src="/assets/DSC00738.jpg" style="width: 900px"/>
-        <p>
-            screenX:{{getX()}}<br />
-            screenY:{{getY()}}<br />
-            Lorem ipsum dolor sit amet consequtor
-        </p>
+        [style.top]="(offset ? (0-(openHeight-currentHeight)/3) : 0) + 'px'"
+        [style.left]="(offset ? (0-(openWidth-currentWidth)/3) : 0) + 'px'">
+        <img src="{{imageURL}}"/>
+        <ng-content></ng-content>
     </div> 
 </div>
 

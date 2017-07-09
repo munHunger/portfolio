@@ -9,7 +9,6 @@
 </div>
 <div class="content row">
   <div class="col-md-6 col-md-offset-3">
-    <expand-modal></expand-modal>
     <h3>About</h3>
     <p>
       I am a driven developer who does full-stack and backend work.
@@ -95,6 +94,11 @@
     </div>
     <div class="col-md-5">
       <h4>Hobby</h4>
+      <expand-modal [offset]="false" imageURL="/assets/wunderbaren.png" [closedHeight]="40" [closedWidth]="100">
+        <p>
+          some random text
+        </p>
+      </expand-modal>
       <span class="timespan">2017</span><span class="title">Wunderbaren</span><br />
       <span class="workareas">A webpage keeping track on prices and current stock in a bar</span>
     </div>
