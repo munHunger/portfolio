@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { ExpandModalComponent } from './expand_modal/expandModal.component';
 import {CookieService} from "angular2-cookie/core";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExpandModalComponent
   ],
   imports: [
     BrowserModule,

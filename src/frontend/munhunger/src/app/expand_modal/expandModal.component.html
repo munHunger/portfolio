@@ -1,0 +1,39 @@
+<div #container 
+     class="container" 
+    [style.width]="closedWidth + 'px'"
+    [style.height]="closedHeight + 'px'"
+    (click)="toggle()">
+    <div style="position: absolute;"
+        [style.top]="(0-(openHeight-currentHeight)/3) + 'px'"
+        [style.left]="(0-(openWidth-currentWidth)/3) + 'px'">
+        <img src="/assets/DSC00738.jpg" style="width: 900px"/>
+        <p>
+            screenX:{{getX()}}<br />
+            screenY:{{getY()}}<br />
+            Lorem ipsum dolor sit amet consequtor
+        </p>
+    </div> 
+</div>
+
+
+            screenX:{{getX()}}<br />
+            screenY:{{getY()}}<br />
+
+<div *ngIf="openProgress > 0"
+     class="container open" 
+    [style.width]="currentWidth + 'px'"
+    [style.height]="currentHeight + 'px'"
+    [style.left]="(getLeft()) + 'px'"
+    [style.top]="getY() + 'px'"
+    (click)="toggle()">
+    <div style="position: absolute;"
+        [style.top]="(0-(openHeight-currentHeight)/3) + 'px'"
+        [style.left]="(0-(openWidth-currentWidth)/3) + 'px'">
+        <img src="/assets/DSC00738.jpg" style="width: 900px"/>
+        <p>
+            screenX:{{getX()}}<br />
+            screenY:{{getY()}}<br />
+            Lorem ipsum dolor sit amet consequtor
+        </p>
+    </div> 
+</div>

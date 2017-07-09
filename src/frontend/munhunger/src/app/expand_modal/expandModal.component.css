@@ -1,0 +1,22 @@
+.container
+{
+    position:relative; 
+    overflow: hidden; 
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #000;
+    background-color: #F00;
+}
+
+.container:hover
+{
+    box-shadow: 0px 0px 10px #000;
+}
+
+.open
+{
+    position: fixed;
+    background-color: #0F0;
+    top: 50px;
+    left: 0px;
+    z-index: 999;
+}
