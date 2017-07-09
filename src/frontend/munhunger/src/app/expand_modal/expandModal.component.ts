@@ -63,7 +63,10 @@ export class ExpandModalComponent
 
     getTop()
     {
-        return this.startY + ((this.targetY-this.startY) * Math.pow(this.sigmoid(this.openProgress), 2));
+        if(this.startY > this.targetY)
+            return this.startY + ((this.targetY-this.startY) * Math.pow(this.sigmoid(this.openProgress), 2));
+        else
+            return this.targetY - ((this.targetY-this.startY) * Math.pow(this.sigmoid(1-this.openProgress), 2));
     }
 
     getX()
