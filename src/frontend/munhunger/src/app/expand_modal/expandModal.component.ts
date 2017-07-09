@@ -21,8 +21,8 @@ export class ExpandModalComponent
 
     startX: number;
     startY: number;
-    targetX: number = 10;
-    targetY: number = 20;
+    targetX: number = 40;
+    targetY: number = 200;
 
     toggle()
     {
@@ -58,7 +58,12 @@ export class ExpandModalComponent
 
     getLeft()
     {
-        return this.startX - ((this.openWidth-this.closedWidth) * this.sigmoid(this.openProgress)) / 2;
+        return this.startX + ((this.targetX-this.startX) * this.sigmoid(this.openProgress));
+    }
+
+    getTop()
+    {
+        return this.startY + ((this.targetY-this.startY) * Math.pow(this.sigmoid(this.openProgress), 2));
     }
 
     getX()

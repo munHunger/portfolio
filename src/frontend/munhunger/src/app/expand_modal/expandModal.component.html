@@ -2,11 +2,13 @@
      class="container" 
     [style.width]="closedWidth + 'px'"
     [style.height]="closedHeight + 'px'"
+    [style.box-shadow]="'0px 0px ' + ((openProgress == 0) ? 5 : 0) + 'px #000'"
     (click)="toggle()">
-    <div style="position: absolute;"
+    <div *ngIf="openProgress == 0"
+         style="position: absolute;"
         [style.top]="(0-(openHeight-currentHeight)/3) + 'px'"
         [style.left]="(0-(openWidth-currentWidth)/3) + 'px'">
-        <img src="/assets/DSC00738.jpg" style="width: 900px"/>
+        <img src="/assets/DSC00738.jpg" [ngClass]="{'w3-grayscale':openProgress > 0}" style="width: 900px"/>
         <p>
             screenX:{{getX()}}<br />
             screenY:{{getY()}}<br />
@@ -24,7 +26,7 @@
     [style.width]="currentWidth + 'px'"
     [style.height]="currentHeight + 'px'"
     [style.left]="(getLeft()) + 'px'"
-    [style.top]="getY() + 'px'"
+    [style.top]="getTop() + 'px'"
     (click)="toggle()">
     <div style="position: absolute;"
         [style.top]="(0-(openHeight-currentHeight)/3) + 'px'"
@@ -37,3 +39,5 @@
         </p>
     </div> 
 </div>
+
+<div class="overlay w3-animate-opacity" *ngIf="openProgress > 0"></div>
