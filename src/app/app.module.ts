@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ExpandModalComponent } from './expand_modal/expandModal.component';
-import {CookieService} from "angular2-cookie/core";
 
 @NgModule({
   declarations: [
@@ -17,7 +16,7 @@ import {CookieService} from "angular2-cookie/core";
     FormsModule,
     HttpModule
   ],
-  providers: [CookieService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,10 +1,10 @@
-import { WunderbarenPage } from './app.po';
+import { MyappPage } from './app.po';
 
-describe('wunderbaren App', () => {
-  let page: WunderbarenPage;
+describe('myapp App', () => {
+  let page: MyappPage;
 
   beforeEach(() => {
-    page = new WunderbarenPage();
+    page = new MyappPage();
   });
 
   it('should display message saying app works', () => {

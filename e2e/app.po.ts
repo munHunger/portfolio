@@ -1,6 +1,6 @@
-import { browser, by, element } from 'protractor';
+import { browser, element, by } from 'protractor';
 
-export class WunderbarenPage {
+export class MyappPage {
   navigateTo() {
     return browser.get('/');
   }
