@@ -1,3 +1,13 @@
-FROM tomcat:latest
+FROM node:latest
 
-ADD build/portfolio-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/portfolio.war
+WORKDIR /usr/src/app
+
+COPY app/package*.json ./
+
+RUN npm install
+
+COPY app .
+
+EXPOSE 8080
+
+CMD [ "npm", "start" ]
