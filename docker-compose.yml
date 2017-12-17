@@ -5,4 +5,5 @@ services:
       container_name: "portfolio"
       build: ./
       ports:
-        - "8082:8080"
+        - "4200:4200"
+        - "8080:8080"

@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:carbon
 
 WORKDIR /usr/src/app
 
@@ -9,5 +9,6 @@ RUN npm install
 COPY app .
 
 EXPOSE 8080
+EXPOSE 4200
 
 CMD [ "npm", "start" ]
