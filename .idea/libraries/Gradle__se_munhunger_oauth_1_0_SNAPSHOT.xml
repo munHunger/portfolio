@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: se.munhunger:oauth:1.0-SNAPSHOT">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../maven/se/munhunger/oauth/1.0-SNAPSHOT/oauth-1.0-20170610.190409-1.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

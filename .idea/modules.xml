@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wunderbaren.iml" filepath="$PROJECT_DIR$/.idea/modules/wunderbaren.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wunderbaren_main.iml" filepath="$PROJECT_DIR$/.idea/modules/wunderbaren_main.iml" group="wunderbaren" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wunderbaren_test.iml" filepath="$PROJECT_DIR$/.idea/modules/wunderbaren_test.iml" group="wunderbaren" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/portfolio.iml" filepath="$PROJECT_DIR$/.idea/modules/portfolio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/portfolio_main.iml" filepath="$PROJECT_DIR$/.idea/modules/portfolio_main.iml" group="portfolio" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/portfolio_test.iml" filepath="$PROJECT_DIR$/.idea/modules/portfolio_test.iml" group="portfolio" />
     </modules>
   </component>
 </project>
