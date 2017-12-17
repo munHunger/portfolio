@@ -1,3 +1,3 @@
-FROM munhunger/wildfly:latest
+FROM tomcat:latest
 
-ADD build/portfolio-1.0-SNAPSHOT.war /opt/jboss/wildfly/standalone/deployments
+ADD build/portfolio-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/portfolio.war
